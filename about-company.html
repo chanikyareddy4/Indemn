@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+
+  
+<!-- Mirrored from www.indemn.ai/about-company.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 17:13:11 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Indemn Insurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy insurance online">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    <meta name="facebook-domain-verification" content="a2ft1vi3im6pprlcz264trwig0fpk6" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '242293817938529');
+      fbq('track', 'PageView');
+      </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=242293817938529&amp;ev=PageView&amp;noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <style>
+      .inner-splash{
+          position:absolute;
+          height: 1000px;
+          width: 100%;
+          opacity: 1;
+          margin-bottom: -40px;
+          /* background-image: url('background_stencil.jpg');
+          background-repeat: no-repeat;
+          background-size: contain; */
+      }
+      .inner-splash-img-rev {
+          position:absolute;
+          height: 1000px;
+          width: 100%;
+          background-image: url('splash_triangles.png');
+          background-repeat: no-repeat;
+          background-size:cover;
+          transform: scaleX(-1);
+          opacity:1;
+      }
+      .splash{
+          height: 1000px;
+          /* background: linear-gradient(-45deg, #CCD4F0, #F5BFD7, #23d5ab, #23a6d5 ); */
+          /* background: linear-gradient(to right, #9198e5, #FBD2C4 ); */
+          background: linear-gradient(to right, #23a6d5, #23d5ab );
+          background-size: 100% 100%;
+          animation: pattern 10s ease infinite;
+          opacity:1;
+      }
+      #splash {
+          height:1000px;
+      }
+      @keyframes pattern {
+          0% {
+              background-position: 0% 50%;
+          }
+          50% {
+              background-position: 100% 50%;
+          }
+          100% {
+              background-position: 0% 50%;
+          }
+      }
+
+      .card {
+          filter: drop-shadow(2px 2px 2px #000);
+      }
+
+      .card-v3 {
+          background-color: #00517C;
+      }
+
+      .card .card-v3:hover {
+          background: 
+              radial-gradient(68.13% 100% at 100% 0,#dd5ce5 0,rgba(221,92,229,0) 100%),
+              linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+              linear-gradient(0deg,#5436da,#5436da),#6e6e80;
+      }
+
+      .card-v2 {
+          background: white;
+      }
+
+      /* .card:hover {
+          background-color: #F3F3FA;
+          background: 
+              linear-gradient(217deg, #9198e5, #d2f7f7 70.71%),
+              linear-gradient(127deg, #9198e5, #d2f7f7 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+              background: 
+              radial-gradient(68.13% 100% at 100% 0,#dd5ce5 0,rgba(221,92,229,0) 100%),
+              linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+              linear-gradient(0deg,#5436da,#5436da),#6e6e80;
+              background: 
+              radial-gradient(68.13% 100% at 100% 0,#dd5ce5 0,rgba(221,92,229,0) 100%),
+              linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+              linear-gradient(0deg,#9198e5,#646aac),#6e6e80;
+              color: #3755BE;
+          opacity: 0.5;
+      } */
+
+      .circuit-card {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background:
+              linear-gradient(217deg, #C2ECF9, #F9C2F3 70.71%),
+              linear-gradient(127deg, #9198e5, #FBD2C4 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid white;
+      }
+
+      .circuit-card-img {
+          background-image: url("circuit.jpg");
+          position: absolute;
+          width:100%;
+          height:80px;
+          /* border-radius: 15px; */
+          opacity: 0.1;
+          /* z-index: 1; */
+      }
+
+      .circuit-card-alt {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          /* display: flex; */
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background:
+              linear-gradient(217deg, rgb(194,249,201,.8), rgb(249,249,194,1) 70.71%),
+              linear-gradient(127deg, rgb(145,152,229,.8), rgb(251,210,196,1) 70.71%);
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid white;
+      }
+
+      .circuit-card-alt-darkred {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          /* display: flex; */
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background:
+              linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, #9198e5, #FBD2C4 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid white;
+      }
+      
+      .circuit-card-alt-blue {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          /* display: flex; */
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background:
+              linear-gradient(217deg, #9198e5, #d2f7f7 70.71%),
+              linear-gradient(127deg, #9198e5, #d2f7f7 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid white;
+      }
+
+      .circuit-card-alt-flatgrey {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          /* display: flex; */
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background: #FAFAFA;
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid white;
+      }
+      
+      .circuit-card-alt-flatgrey-footer {
+          /* background: white; */
+          width: 100%;
+          height: 100px;
+          /* display: flex; */
+          /* position: absolute; */
+          /* top: 50%;
+          left: 50%; */
+          /* border-radius: 15px; */
+          /* filter: drop-shadow(2px 2px 2px #000); */
+          /* background-image: url("./circuit.jpeg"); */
+          background: #FAFAFA;
+          transition: all 2s ease-out 100ms;
+          /* opacity: 0.1; */
+          border-top: 10px solid white;
+          border-bottom: 10px solid #FAFAFA;
+      }
+
+      .bg-secondary-2 {
+          background-color: #FFF;
+      }
+      .bg-secondary-white {
+          background-color: #FAFAFA;
+          /* background-image: linear-gradient(#9198e5, #F9C2F3 ); */
+      }
+      .bg-secondary-1 {
+          background-color: #FFF;
+          background-image: linear-gradient( #F9C2F3,#9198e5 );
+      }
+      .bg-primary {
+          background-color: #FAFAFA;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+            color: #3755BE; }
+        .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+            color: #428bca; }
+        .navbar-dark .navbar-toggler svg path {
+            fill: #3577BE;
+        }
+      .btn-blue {
+          /* background-color:#23d5ab; */
+          /* background: #4080e4; */
+          /* background: #CECCE4; */
+          background: #9198e5;
+          color: white;
+      }
+      .btn-blue:hover {
+          /* background-color:#23d5ab; */
+          /* background: linear-gradient(217deg, #9198e5, #d2f7f7 70.71%); */
+          background: #FBD2C4;
+          /* margin-top: 5px; */
+      }
+      .chat-start-btn {
+          background-color:#23d5ab;
+      }
+      .icon .navbar-toggler-open {
+          color: black;
+      }
+      .navbar-dark .navbar-toggler {
+          color: black;
+      }
+      .bg-secondary-2 {
+          background-image: linear-gradient(#9198e5,#FBD2C4) !important; }
+      .footer {
+          background-color: #F3F3FA;
+      }
+      .badge-green {
+          color: #fff;
+          background-color: green;
+      }
+  </style>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container" id="nav">
+      <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+          <div class="container">
+              <a class="navbar-brand fade-page" href="index.html" style="width:250px; margin-top:10px;">
+                  <img src="IndemnWordmarkBlue.svg" alt="Indemn">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg"
+                      alt="menu interface icon" data-inject-svg />
+                  <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg"
+                      alt="cross interface icon" data-inject-svg />
+              </button>
+              <div class="collapse navbar-collapse justify-content-end">
+                  <div class="py-2 py-lg-0">
+                      <ul class="navbar-nav">
+                          
+                          <li class="nav-item dropdown">
+                              <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                  aria-expanded="false" aria-haspopup="true">Weddings</a>
+                              
+                          </li>
+                          
+                          <!-- <li class="nav-item dropdown">
+                              <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                  aria-expanded="false" aria-haspopup="true">Home</a>
+                              
+                          </li> -->
+
+                          
+                          
+                          <li class="nav-item dropdown">
+                              <a href="about-company.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                  aria-expanded="false" aria-haspopup="true">Company</a>
+                              
+                          </li>
+
+                      </ul>
+                  </div><a href="index.html" class="btn btn-blue ml-lg-3">Chat Now</a>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+    <!-- <div data-overlay class="bg-primary text-light o-hidden position-relative">
+      <div class="position-absolute w-100 h-100 o-hidden top-0">
+          
+      </div>
+      <div class="splash">
+          <div class="inner-splash">
+              <img class="inner-splash-img-rev" />
+              <section id="splash" class="min-vh-20 o-hidden d-flex flex-column justify-content-center" style="padding-top: 40px; height:1000px;">
+                  <div class="mb-4" id="webchat"></div>
+                  
+              </section>
+          </div>
+      </div>
+  </div> -->
+
+  <div class="circuit-card-alt-flatgrey" style="margin-top: 130px;">
+      <div class="circuit-card-img"></div>
+  </div>
+
+    <section class="bg-dark text-light header-inner p-0 jarallax o-hidden" data-overlay data-jarallax data-speed="0.2">
+      <img src="assets/img/inner-1.jpg" alt="Image" class="jarallax-img opacity-30">
+      <div class="container py-0 layer-2">
+        <!-- <div class="row my-3">
+          <div class="col">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Pages</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Current Page</li>
+              </ol>
+            </nav>
+          </div>
+        </div> -->
+        <div class="row my-4 my-md-6" data-aos="fade-up">
+          <div class="col-lg-9 col-xl-8">
+            <h1 class="display-4">About Indemn</h1>
+            <!-- <p class="lead mb-0">We are an insuretech startup launched in 2021 based in NYC & Sydney</p> -->
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <section class="p-0">
+      <div class="container py-6">
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col">
+            <h2>Making insurance a conversation</h2>
+          </div>
+        </div>
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col-md-9">
+            <!-- <h2>What we care about</h2> -->
+            <p class="lead">We're on a mission to create self-serve insurance experiences that people love to use.</p>
+            <!-- <h2>Championing our customers</h2> -->
+            <p class="lead mb-0">We've built the first fully conversation native insurance platform to make the whole process of learning about and purchasing coverage a breeze. We empower you with machine learning powered chatbots that can answer questions, generate customizable quotes, and execute service requests instantly.
+            </p>
+            <br />
+            <p class="lead mb-0">As an independent agent we search the market for the best products and then make them available to you, all online, with just a simple conversation.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="circuit-card-alt-flatgrey">
+    <div class="circuit-card-img"></div>
+  </div>
+
+  <section class="white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col justify-content-center">
+          <h2>How We Do It</h2>
+          <br />
+          <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex">
+              <div class="card card-body">
+                <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                  <div style="font-size:4rem; margin-bottom:-5px;"></div>
+                </div> -->
+                <h4>Conversational Artificial Intelligence</h4>
+                <p>
+                  We build technology to make a confusing product simple to understand, and a traditionally long process short and intuitive. It's as easy as starting a conversation and going with the flow.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+              <div class="card card-body">
+                <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <img class="icon bg-white" src="assets/img/icons/theme/devices/homepod.svg" alt="icon" data-inject-svg />
+                  <div style="font-size: 4rem; margin-bottom:-5px;"></div>
+                </div> -->
+                <h4>Answers to Insurance Questions</h4>
+                <p>
+                  We strive to provide the answer to every insurance question you have. Our goal is to give you the power to summon insurance expertise at the stroke of a few keys.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card card-body">
+                  <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                    <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                    <div style="font-size: 4rem; margin-bottom:-5px;">💎</div>
+                  </div> -->
+                  <h4>Online Quote, Bind, & Service</h4>
+                  <p>
+                    We build digital insurance experiences for the best products in the market and from the highest rated insurance carrier partners. One place to ask, quote, compare, and buy. 
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="circuit-card-alt-flatgrey">
+    <div class="circuit-card-img"></div>
+  </div>
+
+    <!-- <section>
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>At a glance</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 mb-3 col-lg-3 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <span class="display-4 text-primary d-block" data-countup data-start="0" data-end="1367" data-duration="3" data-grouping="true"></span>
+            <span class="h6">Conversations Powered</span>
+          </div>
+          <div class="col-6 mb-3 col-lg-3 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <span class="display-4 text-primary d-block" data-countup data-start="0" data-end="3" data-duration="3" data-grouping="true"></span>
+            <span class="h6">Team Members</span>
+          </div>
+          <div class="col-6 mb-3 col-lg-3 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <span class="display-4 text-primary d-block" data-countup data-start="1" data-end="4" data-duration="3" data-grouping="true"></span>
+            <span class="h6">Chatbots Live</span>
+          </div>
+          <div class="col-6 mb-3 col-lg-3 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <span class="display-4 text-primary d-block" data-countup data-start="1" data-end="99.99" data-decimal-places="1" data-duration="3" data-grouping="true" data-suffix="%"></span>
+            <span class="h6">Server Uptime</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <div class="circuit-card-alt-flatgrey">
+      <div class="circuit-card-img"></div>
+    </div>
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-5 col-xl-6 mb-4 mb-md-0">
+            <img src="happycustomers.jpg" alt="Image" class="rounded shadow-3d">
+          </div>
+          <div class="col-md-7 col-xl-6">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <span class="badge badge-primary">Our Promise</span>
+                <div class="my-3">
+                  <span class="h1">Championing our customers 💪</span>
+                </div>
+                <p class="lead">As an insurance broker we will always be transparent with customers.</p>
+                <p class="lead mb-0"> We will seek the bext coverage
+                option available, to match every customer's budget and appetite for risk, and 
+                hold our carrier partners accountable when claims arise.</p>
+                <br />
+                <p class="lead mb-0">This relationship must be based on trust and we will
+                defend that trust at all costs to ensure a fair claims process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center justify-content-around">
+          
+          <div class="col-md-7 col-xl-6">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <span class="badge badge-primary">The Company</span>
+                <div class="my-3">
+                  <span class="h1">Change the game through customer experience &#128515;</span>
+                </div>
+                <p class="lead">Indemn is the first insurance platform that is fully conversation native. </p>
+                <p class="lead">We are building AI driven conversations which we believe are the best format for self service insurance experiences.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-6 mb-4 mb-md-0">
+            <img src="makehappy.jpg" alt="Image" class="rounded shadow-3d">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-5 col-xl-6 mb-4 mb-md-0">
+            <img src="hypersmile.jpg" alt="Image" class="rounded shadow-3d">
+          </div>
+          <div class="col-md-7 col-xl-6">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <span class="badge badge-primary">Our Mission</span>
+                <div class="my-3">
+                  <span class="h1">Reinvent insurance 🚀</span>
+                </div>
+                <p class="lead">Our mission is to build a modern insurance company that delights customers throughout their journey.</p>
+                <p class="lead mb-0">We are building a
+                platform for serving the right insurance product to a specific customer in the simplest, most effective method
+                available. We work with insureds, their agent advisors, and some of the best insurance carriers in the marketplace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="circuit-card-alt-flatgrey">
+      <div class="circuit-card-img"></div>
+    </div> -->
+
+    <section class="p-0">
+      <div class="container py-6">
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col">
+            <h2>Company Values</h2>
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+          
+          <!-- <div class="row"> -->
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-9">
+              <h2>What we care about</h2>
+              <p class="lead">Indemn is a Public Benefit Corporation focused on delivering insurance as a social good, sharing our expertise where it can best make a difference, and building a more resilient world. We've built this focus into our company charter and Indemn leaders must consider our customers, team members, and the broader community with everything we do. </p>
+              <h2>Championing our customers</h2>
+              <p class="lead mb-0">Every customer must be able to make an informed decision. Insurance can be confusing and it is imperative to communicate clearly and to provide all relevant information, even that which could be detrimental to converting a customer. Transparency is a core value. We know over that our customer's trust over the long-term is much more valuable than a single policy purchase today.
+              </p>
+              <br />
+              <p class="lead mb-0">It takes independence to deliver an insurance proposal most fit for purpose. As an independent agent we can provide the right coverage for many of our customers, but not all, and we'll be quick to communicate where we are with every quote we provide. As an insurance broker representing the interests of our customers, we consider it our duty to match each customer's budget and appetite for risk with the most applicable product available.
+              </p>
+              <br />
+              <h2>Be a part of the community</h2>
+              <br />
+              <p class="lead mb-0">We remain vigilant against conflicts of interest. Focus on our role in delivering insurance as a social good. Think long term — Insurance exists to build resiliency into the world. We'll never lose focus of this fact.
+              </p>
+              <br />
+              <p class="lead mb-0">Be accountable for the decisions we make and the promises us and our carrier partners have made. This includes diligence and persistence in support of our insureds when a claim arises. Most of the coverage we provide to our customers is is only applicable at the hardest moments in their lives. This relationship must be based on trust and we will defend that trust at all costs to ensure a fair claims process.
+              </p>
+              <br />
+              <p class="lead mb-0">As Indemn grows we will engage in initiatives that create a more resilient world, and scale along with our own success.</p>
+            </div>
+          <!-- </div> -->
+          
+        </div>
+        
+      </div>
+  </section>
+
+  <div class="circuit-card-alt-flatgrey">
+    <div class="circuit-card-img"></div>
+  </div>
+  <section class="p-0">
+    <div class="container py-6" data-aos="fade-up">
+      <div class="row align-items-center justify-content-around">
+        <div class="col">
+          <h2>Team</h2>
+          <p class="lead">Indemn was seeded in an East Village, NYC apartment by two roommates sharing their domain expertise and enthusiasm for building a new kind of business that could better serve customers and the broader community. Together, combining a passion for insurance and artificial intelligence, they're building an insurance experience for the next generation and beyond. It takes a team and if you're interested to join us please do not hesitate to reach out!</p>
+          <div>
+            <p><br /></p>
+          </div>
+          <div class="row mb-3">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card card-lg card-body align-items-center">
+                <span class="badge badge-primary badge-top">CoFounder</span>
+                <!-- <img src="assets/img/avatars/kyle_linkedin.png" alt="Kyle Geoghan" class="avatar avatar-xlg mb-3"> -->
+                <img src="kyle_profile_v2.png" alt="Kyle Geoghan" class="avatar avatar-xlg mb-3">
+                <h5 class="mb-0">Kyle Geoghan</h5>
+                <span>CEO</span>
+              </div>
+            </div>
+            <!-- <div class="row"> -->
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-6">
+                <h2>Insurance Champion</h2>
+                <p class="lead mb-0">I developed an interest in insurance at an early age, steeped in it at home as a kid watching his father work, and as a teenager while working at the independent agency my grandfather started in 1957.</p>
+                <br />
+                <p class="lead mb-0"><em>I decided to follow on and become an independent agent myself because I derived immense pleasure from building solutions and answering all the insurance questions clients would come to me with.</em></p>
+                <br />
+                <p class="lead mb-0"><em>However, after a while, I felt frustrated with the old way of doing things and started to look for new solutions. I soon joined a startup where I could be a part of building online insurance products, and I knew I found a missing piece to serving customers the way they deserve.</em></p>
+                <br />
+                <p class="lead mb-0"><em>The last piece, and what inspires me everyday while building Indemn, is the leverage artificial intelligence provides. I'm now able to take what I love to do in serving insurance customers and scale the solutions to anyone, on their own time, with an experience they define.</em></p>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center justify-content-around">
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card card-lg card-body align-items-center">
+                <span class="badge badge-primary badge-top">CoFounder</span>
+                <img src="pat_profile.jpg" alt="Patrick Daly" class="avatar avatar-xlg mb-3">
+                <h5 class="mb-0">Patrick Daly</h5>
+                <span>CTO</span>
+              </div>
+            </div>
+            <!-- <div class="row"> -->
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-6">
+                <h2>Technology Champion</h2>
+                <p class="lead">Tech veteran building AI driven products for social good.</p>
+                  <p class="lead mb-0">Patrick has a background in building and 
+                  scaling global tech stacks up to millions of users, 
+                  working in startups across Sydney Australia, San Francisco & NY.
+                  </p>
+                  <br />
+                  <p class="lead mb-0">With a decade of experience as an engineer, manager and director, Patrick has a special appreciation for the role of engineering culture in companies and of startups in the competitive landscape.
+                  </p>
+                  <br />
+                  <p class="lead mb-0"><em>I love the challenges and the energy involved in building new products and businesses. The next generation of AI driven companies will be the most impactful wave yet.</em></p>
+              </div>
+            <!-- </div> -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <div class="circuit-card-alt-flatgrey">
+    <div class="circuit-card-img"></div>
+  </div>
+    
+    
+    <!-- <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-7 col-xl-6">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <span class="badge badge-primary">Company Values</span>
+                <div class="my-3">
+                  <span class="h1">Act like an Entrepreneur.</span>
+                </div>
+                <div class="my-3">
+                  <span class="h1">Build Expertise.</span>
+                </div>
+                <div class="my-3">
+                  <span class="h1">Be Creative in your role.</span>
+                </div>
+                <div class="my-3">
+                  <span class="h1">Be Persistant.</span>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-6 mb-4 mb-md-0">
+            <img src="assets/img/inner-4.jpg" alt="Image" class="rounded shadow-3d">
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="bg-primary-alt o-hidden">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Our History</h2>
+          </div>
+        </div>
+        <div class="row o-hidden o-lg-visible">
+          <div class="col d-flex flex-column align-items-center">
+            <ol class="process-vertical">
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">May 2021</span>
+                  <h5 class="mb-0">Company founded 🎉</h5>
+                </div>
+              </li>
+              <li data-aos="fade-right">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">October 2021</span>
+                  <h5 class="mb-0">Weddings launched 🚀</h5>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">Q4 2021</span>
+                  <h5 class="mb-0">Currently raising 👋</h5>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="circuit-card-alt-flatgrey-footer">
+      <div class="circuit-card-img"></div>
+    </div>
+
+    <footer class="pb-4 bg-secondary-white text-dark" id="footer">
+      <div class="container">
+          <div class="row mb-5">
+              <div class="col">
+                  <div class="card card-body border-0 o-hidden mb-0 bg-primary text-dark">
+                      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                          <div class="h3 text-center mb-md-0">Start your insurance conversation</div>
+                          <a href="index.html" class="btn btn-lg btn-blue">
+                              Chat Now
+                          </a>
+                      </div>
+                      
+                  </div>
+
+              </div>
+          </div>
+          <div class="row mb-5">
+              <div class="col-6 col-lg-3 col-xl-2">
+                  <h5>Navigate</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                          <a href="index.html" class="nav-link">Weddings</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                          <a href="index.html" class="nav-link">Home</a>
+                      </li> -->
+                      <li class="nav-item">
+                          <a href="https://app.termly.io/document/terms-of-use-for-online-marketplace/f9bf5857-b8f1-4ee1-a197-84a6a3e1ed39" class="nav-link">Terms of Service</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="https://app.termly.io/document/privacy-policy/94277ade-0f83-4b59-9b3c-d1c711ec802e" class="nav-link">Privacy Policy</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-6 col-lg">
+                  <h5>Contact</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-3 d-flex">
+                          <div class="ml-3">
+                              New York License: #BR-1665925
+                          </div>
+                      </li>
+                      <li class="mb-3 d-flex">
+                          <!-- <img class="icon" src="assets/img/icons/theme/map/marker-1.svg" alt="marker-1 icon"
+                              data-inject-svg /> -->
+                          <div class="ml-3">
+                              <span>4615 Center Blvd, Ste PH3, Long Island City,
+                                  <br />NY, 11109</span>
+                          </div>
+                      </li>
+                      <li class="mb-3 d-flex">
+                          <!-- <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon"
+                              data-inject-svg /> -->
+                          <div class="ml-3">
+                              <span>Request a callback</span>
+                              <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
+                          </div>
+                      </li>
+                      <li class="mb-3 d-flex">
+                          <!-- <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon"
+                              data-inject-svg /> -->
+                          <div class="ml-3">
+                              <a href="#">service@indemn.ai</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <!-- <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+                  <h5>Subscribe</h5>
+                  <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+                  <form action="/forms/mailchimp.php" data-form-email novalidate>
+                      <div class="form-row">
+                          <div class="col-12">
+                              <input type="email" class="form-control mb-2" placeholder="Email Address" name="email"
+                                  required>
+                          </div>
+                          <div class="col-12">
+                              <div class="d-none alert alert-success" role="alert" data-success-message>
+                                  Thanks, a member of our team will be in touch shortly.
+                              </div>
+                              <div class="d-none alert alert-danger" role="alert" data-error-message>
+                                  Please fill all fields correctly.
+                              </div>
+                              <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"
+                                  data-size="invisible" data-badge="bottomleft">
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-loading btn-block"
+                                  data-loading-text="Sending">
+                                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon"
+                                      data-inject-svg />
+                                  <span>Subscribe</span>
+                              </button>
+                          </div>
+                      </div>
+                  </form>
+                  <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy
+                          Policy</a>
+                  </small>
+
+              </div> -->
+          </div>
+          <div class="row justify-content-center mb-2">
+              <div class="col-auto">
+                  <ul class="nav">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">
+                              <img class="icon " src="assets/img/icons/social/instagram.svg"
+                                  alt="instagram social icon" data-inject-svg />
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">
+                              <img class="icon " src="assets/img/icons/social/twitter.svg" alt="twitter social icon"
+                                  data-inject-svg />
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">
+                              <img class="icon " src="assets/img/icons/social/youtube.svg" alt="youtube social icon"
+                                  data-inject-svg />
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">
+                              <img class="icon " src="assets/img/icons/social/medium.svg" alt="medium social icon"
+                                  data-inject-svg />
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">
+                              <img class="icon " src="assets/img/icons/social/facebook.svg" alt="facebook social icon"
+                                  data-inject-svg />
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col col-md-auto text-center">
+                  <small class="text-muted">&copy;2021 Indemn Inc <a href="https://app.termly.io/document/privacy-policy/94277ade-0f83-4b59-9b3c-d1c711ec802e">Privacy Policy</a> and <a
+                          href="https://app.termly.io/document/terms-of-use-for-online-marketplace/f9bf5857-b8f1-4ee1-a197-84a6a3e1ed39">Terms of Service.</a>
+                  </small>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a> -->
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+    <!-- Hotjar Tracking Code for https://www.indemn.ai -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:2680685,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+  </body>
+
+
+<!-- Mirrored from www.indemn.ai/about-company.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 17:13:12 GMT -->
+</html>

@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.indemn.ai/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 17:12:50 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Indemn Insurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy insurance online">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="chatbot.css" /> -->
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    <meta name="facebook-domain-verification" content="a2ft1vi3im6pprlcz264trwig0fpk6" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '242293817938529');
+      fbq('track', 'PageView');
+      </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=242293817938529&amp;ev=PageView&amp;noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <script src="../kit.fontawesome.com/7fcef2ffd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        
+        .splash{
+            /*height: 100%;*/
+            /* background: linear-gradient(-45deg, #CCD4F0, #F5BFD7, #23d5ab, #23a6d5 ); */
+            background: linear-gradient(to right, #ffd966, #F886B8 );
+            /* background: linear-gradient(to right, #23a6d5, #23d5ab ); */
+            background-size: 100% 100%;
+            /* animation: pattern 10s ease infinite; */
+            opacity:1;
+            margin-top: -40px;
+            padding-top: 40px;
+            max-width:auto;
+            height: 1000px;
+            opacity: 1;
+            background-repeat: no-repeat;
+        }
+
+        .splash-container {
+            /*margin-top: 100px;*/
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+                flex-direction: column;
+                flex-wrap: initial;
+            justify-content: flex-end;
+        }
+
+        .splash-header {
+          /*position: relative;*/
+          /*left: 30%;*/
+          margin-top: 50px;
+          /*height: 50px;*/
+          z-index: 0;
+          /*display: flex;
+          align-items: center;
+          flex-flow: column;
+            flex-direction: column;
+            flex-wrap: initial;
+          justify-content: flex-end;*/
+        }
+
+        .splash-webchat {
+            height: 200px;
+            z-index: 10;
+        }
+
+        .splash-footer {
+            /*position: absolute;*/
+            display: flex;
+            left:  30%;
+            /*top:  -400px;*/
+            align-items: left;
+            /*flex-flow: column;*/
+                /*flex-direction: column;
+                flex-wrap: initial;*/
+            /*justify-content: flex-end;*/
+            z-index: 0;
+        }
+
+        .splash-footer-dynamic {
+            position: absolute;
+            width: 100%;
+            margin-left: -130px;
+        }
+
+        .inner-splash{
+            position:absolute;
+            height: 1000px;
+            width: 100%;
+            opacity: 0.1;
+            margin-bottom: -40px;
+            /* background-image: url('background_stencil.jpg');
+            background-repeat: no-repeat;
+            background-size: contain; */
+        }
+        .inner-splash-img-rev {
+            height: 1000px;
+            width: 100%;
+            background-image: url('background_stencil_new.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*transform: scaleX(-1);*/
+            opacity:0.5;
+        }
+
+        .rw-widget-container {
+            margin-top: -130px;
+        }
+
+        @keyframes pattern {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card {
+            filter: drop-shadow(2px 2px 2px #000);
+        }
+
+        .card-v3 {
+            background-color: #00517C;
+        }
+
+        .card .card-v3:hover {
+            background: 
+                radial-gradient(68.13% 100% at 100% 0,#e6842e 0,rgba(221,92,229,0) 100%),
+                linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+                linear-gradient(0deg,#5436da,#5436da),#6e6e80;
+        }
+
+        .card-v2 {
+            background: white;
+        }
+
+        /* .card:hover {
+            background-color: #9afa84;
+            background: 
+                linear-gradient(217deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(127deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+                background: 
+                radial-gradient(68.13% 100% at 100% 0,#e6842e 0,rgba(221,92,229,0) 100%),
+                linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+                linear-gradient(0deg,#5436da,#5436da),#6e6e80;
+                background: 
+                radial-gradient(68.13% 100% at 100% 0,#e6842e 0,rgba(221,92,229,0) 100%),
+                linear-gradient(95.52deg,#2e95d3,rgba(46,149,211,0)),
+                linear-gradient(0deg,#ffd966,#646aac),#6e6e80;
+                color: #9afa84;
+            opacity: 0.5;
+        } */
+
+        .circuit-card {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background:
+                linear-gradient(217deg, #C2ECF9, #F9C2F3 70.71%),
+                linear-gradient(127deg, #ffd966, #F886B8 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+
+        .circuit-card-img {
+            background-image: url("vine_frame_12_new.jpg");
+            position: absolute;
+            width:100%;
+            height:80px;
+            /* border-radius: 15px; */
+            opacity: 0.1;
+            /* z-index: 1; */
+        }
+
+        .circuit-card-alt {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            /* display: flex; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background:
+                linear-gradient(217deg, rgb(194,249,201,.8), rgb(249,249,194,1) 70.71%),
+                linear-gradient(127deg, rgb(145,152,229,.8), rgb(251,210,196,1) 70.71%);
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+
+        .circuit-card-alt-darkred {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            /* display: flex; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background:
+                linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, #ffd966, #F886B8 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+        
+        .circuit-card-alt-blue {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            /* display: flex; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background:
+                linear-gradient(217deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(127deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+
+        .circuit-card-alt-flatgrey {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            /* display: flex; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background: #FAFAFA;
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid #FAFAFA;
+        }
+
+        .circuit-card-alt-flatgrey-v2 {
+            /* background: white; */
+            width: 100%;
+            height: 100px;
+            /* display: flex; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* border-radius: 15px; */
+            /* filter: drop-shadow(2px 2px 2px #000); */
+            /* background-image: url("./circuit.jpeg"); */
+            background: #FAFAFA;
+            transition: all 2s ease-out 100ms;
+            /* opacity: 0.1; */
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+        }
+
+        .bg-secondary-2 {
+            background-color: #FFF;
+        }
+        .bg-secondary-white {
+            background-color: #9afa84;
+            /* background-image: linear-gradient(#ffd966, #F9C2F3 ); */
+        }
+        .bg-secondary-1 {
+            background-color: #FFF;
+            background-image: linear-gradient( #ffd966,#ffd966 );
+        }
+        .bg-primary {
+            background-color: #9afa84;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #EA4AC8; }
+        .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+            color: #428bca; }
+        .navbar-dark .navbar-toggler svg path {
+            fill: #EA4AC8;
+        }
+        .btn-blue {
+            /* background-color:#23d5ab; */
+            /* background: #4080e4; */
+            /* background: #CECCE4; */
+            background: #ffd966;
+            color: white;
+        }
+        .btn-blue:hover {
+            /* background-color:#23d5ab; */
+            /* background: linear-gradient(217deg, #ffd966, #ffd966 70.71%); */
+            background: #F886B8;
+            /* margin-top: 5px; */
+            /* background: 
+                linear-gradient(217deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(127deg, #ffd966, #ffd966 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+            /* background:
+                linear-gradient(217deg, #C2ECF9, #F9C2F3 70.71%),
+                linear-gradient(127deg, #ffd966, #F886B8 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+            /* background-image: linear-gradient( #F9C2F3,#ffd966 ); */
+            /* background:
+                linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, #ffd966, #F886B8 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+            /* color: #3577BE; */
+        }
+        .chat-start-btn {
+            background-color:#23d5ab;
+        }
+        .icon .navbar-toggler-open {
+            color: black;
+        }
+        .navbar-dark .navbar-toggler {
+            color: black;
+        }
+        .bg-secondary-2 {
+            background-image: linear-gradient(#ffd966,#F886B8) !important; }
+        .footer {
+            background-color: #F3F3FA;
+        }
+        .badge-green {
+            color: #fff;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body data-smooth-scroll-offset="73">
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+    <div class="navbar-container" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+            <div class="container">
+                <a class="navbar-brand fade-page" href="index.html" style="width:250px; margin-top:10px;">
+                    <img src="IndemnWordmarkBlue.svg" alt="Indemn">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg"
+                        alt="menu interface icon" data-inject-svg />
+                    <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg"
+                        alt="cross interface icon" data-inject-svg />
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <div class="py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            
+                            <li class="nav-item dropdown">
+                                <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                    aria-expanded="false" aria-haspopup="true">Weddings</a>
+                                
+                            </li>
+                            
+                            <!-- <li class="nav-item dropdown">
+                                <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                    aria-expanded="false" aria-haspopup="true">Home</a>
+                                
+                            </li> -->
+
+                            
+                            
+                            <li class="nav-item dropdown">
+                                <a href="about-company.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
+                                    aria-expanded="false" aria-haspopup="true">Company</a>
+                                
+                            </li>
+
+                        </ul>
+                    </div><a href="#" class="btn btn-blue ml-lg-3">Chat Now</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div data-overlay class="bg-primary text-light o-hidden position-relative">
+        <div class="position-absolute w-100 h-100 o-hidden top-0">
+        </div>
+        <div class="splash">
+            <div class="inner-splash">
+                <img class="inner-splash-img-rev" />
+            </div>
+            <div class="splash-container">
+                <div class="splash-header">
+                  <div class="row">
+                      <div style="height:100px">
+                        <!-- <h2 style="margin-bottom: 10px;">Wedding Insurance</h2>
+                        <h1 style="font-size: 4.5rem; margin-left: 15px;">Indemn</h1> -->
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="splash-webchat">
+                    <!-- <section id="splash" class="min-vh-20 o-hidden d-flex flex-column justify-content-center"> -->
+                        <div id="webchat" style="margin-bottom: 150px;"></div>
+                        
+                    <!-- </section> -->
+                </div>
+                <!-- <div class="splash-footer">
+                    <div class="splash-footer-dynamic">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8">
+                              <h2>Ask Indemn</h2>
+                              <span>hmmm... </span>
+                              <span data-typed-text data-loop="true" data-type-speed="45"
+                                data-strings='["How much does wedding insurance cost?","What is wedding insurance?","What is host liability?","What is a certificate?"]'></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div>
+
+    <section class="white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col justify-content-center">
+              <h2>The best wedding insurance on the Internet</h2>
+              <!-- <p>
+                Our average customer spends $175, with the following factors affecting the cost of coverage such as the number of people attending, if alcohol is being served, and the limit of cancellation insurance.
+              </p> -->
+              <br />
+              <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img src="wedding_img/wedding_dress_sq.png" alt="icon" style="border-radius: 50%;"/>
+                      <!-- <div style="font-size:3rem; margin-bottom:-5px;"><i class="fas fa-bolt" style="color: #3755BE;"></i></div> -->
+                    </div>
+                    <h4>Self service</h4>
+                    <p>
+                      We put the power of insurance in your hands with the first fully self-serve experience.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img src="wedding_img/couple_question_sq.png" alt="icon" style="border-radius: 50%;"/>
+                      <!-- <img class="icon bg-white" src="assets/img/icons/theme/devices/homepod.svg" alt="icon" data-inject-svg /> -->
+                      <!-- <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-bell" style="color: #3755BE;"></i></div> -->
+                    </div>
+                    <h4>Questions answered</h4>
+                    <p>
+                      We've taken the time to include every question we can think of for wedding insurance.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card card-body">
+                      <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img src="wedding_img/wedding_calc_sq.png" alt="icon" style="border-radius: 50%;"/>
+                        <!-- <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg /> -->
+                        <!-- <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-flag-usa" style="color: #3755BE;"></i></div> -->
+                      </div>
+                      <h4>Best value</h4>
+                      <p>
+                        We've searched the market far and wide for the best prices and coverage out there. Now it's accessible to you online with just a conversation. 
+                      </p>
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div>
+
+
+    <section class="white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col justify-content-center">
+              <h2>What is wedding insurance and how much does it cost?</h2>
+              <p>
+                Wedding insurance is available to cover you from lawsuits arising out of the event, and to protect your substantial investments as the host. The cost is based on your coverage type and the limits you select.   
+              </p>
+              <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img src="wedding_img/church_window_sq.png" alt="icon" style="border-radius: 50%;"/>
+                      <!-- <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg /> -->
+                      <!-- <div style="font-size: 2.5rem; margin-bottom:-5px;"><i class="fas fa-church" style="color: #3755BE;"></i></div> -->
+                    </div>
+                    <h4>Basic Liability</h4>
+                    <p>
+                      Starting as low as $75.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img src="wedding_img/wine_bottle_sq.png" alt="icon" style="border-radius: 50%;"/>
+                      <!-- <img class="icon bg-white" src="assets/img/icons/theme/devices/homepod.svg" alt="icon" data-inject-svg /> -->
+                      <!-- <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-wine-glass-alt" style="color: #3755BE;"></i></div> -->
+                    </div>
+                    <h4>Full Liability</h4>
+                    <p>
+                      Starting at $175 including liquor liability.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card card-body">
+                      <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img src="wedding_img/catering_sq.png" alt="icon" style="border-radius: 50%;"/>
+                        <!-- <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg /> -->
+                        <!-- <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-arrow-circle-left" style="color: #3755BE;"></i></div> -->
+                      </div>
+                      <h4>Cancellation Insurance</h4>
+                      <p>
+                        Starting at $100 and available to cover weddings as large as you can dream.
+                      </p>
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div>
+
+    <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h2>Get Covered in 5 minutes or less</h2>
+              <br />
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-body justify-content-between text-light">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        
+                      </div>
+                    </div>
+                    <div>
+                      <h2 style="color: #3755BE">Step 1: Start a conversation and tell us about your wedding plans.</h2>
+                      <!-- <span class="text-small opacity-70">– Kyle G, CEO</span> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-body justify-content-between text-light">
+                    <div class="d-flex justify-content-between mb-3">
+                      
+                    </div>
+                    <div>
+                      <h2 style="color: #3755BE">Step 2: Review and customize your online quote. Purchase instantly and securely.</h2>
+                      <!-- <span class="text-small opacity-70">– Patrick D, CTO</span> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-body justify-content-between text-light">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                      </div>
+                      
+                    </div>
+                    <div>
+                      <h2 style="color: #3755BE">Step 3 - Your policy is automatically sent to you and a certificate to the venue.</h2>
+                      <!-- <span class="text-small opacity-70">– Kyle G, CEO</span> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div> -->
+
+    <!-- <section class="bg-secondary-3" style="background-image: url('assets/img/tiled_background_large.png'); object-fit:cover;"> -->
+
+    
+
+    
+
+    <!-- <section class="bg-primary">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h2 style="color: black">Insurance made easy</h2>
+              <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <h4>Buy Online</h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body bg-primary text-light">
+                    <div class="icon-round mb-3 mb-md-4 icon bg-white">
+                      <img class="icon bg-white" src="assets/img/icons/theme/devices/homepod.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <h4>Host Liability Coverage</h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card card-body">
+                      <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                      </div>
+                      <h4>Cancellation Insurance</h4>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                      </p>
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="bg-secondary-1">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h2 style="color: white">Learn more about Wedding Insurance</h2>
+              <div class="row">
+                <div class="col-md-4 col-xl-3 d-flex">
+                  <div class="card card-icon-2 card-body justify-content-between">
+                    <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img class="icon bg-primary" src="assets/img/icons/theme/devices/cardboard-vr.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <h5 class="mb-0">Smart home devices and more</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xl-3 d-flex">
+                  <a href="#" class="card card-icon-2 card-body justify-content-between shadow-3d hover-bg-primary-3">
+                    <div class="icon-round mb-3 mb-md-4 icon bg-primary-2">
+                      <img class="icon bg-primary-2" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <h5 class="mb-0">Smart home devices and more</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-xl-3 d-flex">
+                  <a href="#" class="card card-icon-2 card-body justify-content-between shadow-3d hover-bg-primary-3">
+                    <div class="icon-round mb-3 mb-md-4 icon bg-primary-2">
+                      <img class="icon bg-primary-2" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                    </div>
+                    <h5 class="mb-0">Smart home devices and more</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+
+    <!-- <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div> -->
+
+    <!-- <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div> -->
+
+    <!-- <section class="pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <h3 class="h2"></h3>  
+                </div>
+            </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+              <h3 class="h2">Frequently Asked Questions</h3>
+              <div class="my-4">
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                  <div data-target="#panel-1" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                    <span class="h6 mb-0">Can I talk to someone live about a policy?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-1">
+                    <div class="pt-3">
+                      <p>Currently we provide service through our online chatbot which should be able to handle your enquiry.</p>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                  <div data-target="#panel-2" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2">
+                    <span class="h6 mb-0">Is your website secure?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-2">
+                    <div class="pt-3">
+                      <p>Yes. All communication is via SSL secured systems. We protect the privacy of customer interactions and data.</p>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                  <div data-target="#panel-3" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-3">
+                    <span class="h6 mb-0">Do you have a phone number for support?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-3">
+                    <div class="pt-3">
+                      <p>At the present time, we will respond by request for a callback through our chatbot</p>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                  <div data-target="#panel-4" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-4">
+                    <span class="h6 mb-0">How can I request support?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-4">
+                    <div class="pt-3">
+                      <p>You can resolve most support enquiries via our chatbot, but if you require dedicated support please contact us at service@indemn.ai 
+                      </p>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                  <div data-target="#panel-5" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-5">
+                    <span class="h6 mb-0">When purchasing a policy, will I receive a certificate?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-5">
+                    <div class="pt-3">
+                      <p>Yes, policy buyers will receive a certificate</p>
+  
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="card mb-2 card-sm card-body hover-shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                  <div data-target="#panel-6" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="panel-6">
+                    <span class="h6 mb-0">How will I receive a copy of my policy?</span>
+                    <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  </div>
+                  <div class="collapse" id="panel-6">
+                    <div class="pt-3">
+                      <p>Upon successful checkout, you will receive a copy of all details via email</p>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Still have questions? <a href="#" class="hover-arrow">Start chatting now</a>
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- <div class="circuit-card-alt-flatgrey-v2">
+        <div class="circuit-card-img"></div>
+    </div> -->
+
+    <!-- <section class="p-0">
+        <div class="container py-6">
+          <div class="row mb-4" data-aos="fade-up">
+            <div class="col">
+              <h2>What we care about</h2>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card card-lg card-body align-items-center">
+                <span class="badge badge-primary badge-top">CoFounder</span>
+                <img src="kyle_profile_v2.png" alt="Kyle Geoghan" class="avatar avatar-xlg mb-3">
+                <h5 class="mb-0">Kyle Geoghan</h5>
+                <span>CEO</span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card card-lg card-body align-items-center">
+                <span class="badge badge-primary badge-top">CoFounder</span>
+                <img src="pat_profile.jpg" alt="Patrick Daly" class="avatar avatar-xlg mb-3">
+                <h5 class="mb-0">Patrick Daly</h5>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span>Indemn is a Public Benefit Corporation focused on delivering insurance as a social good, sharing our expertise where it can best make a difference, and building a more resilient world. We've built this focus into our company charter and Indemn leaders must consider our customers, team members, and the broader community with everything we do.
+              </span>
+              
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col">
+              <span>We are a fully licensed New York insurance broker qualified to sell our carrier partner products.
+              </span>
+              <span>Enjoy the fanatical support of a startup and the security of world class carrier product coverage. <a href="#">View our carrier products</a>
+              </span>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+      <div class="circuit-card-alt-flatgrey">
+        <div class="circuit-card-img"></div>
+      </div>
+
+      <section class="white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col justify-content-center">
+              <h2>Indemn</h2>
+              <!-- <p>
+                Wedding insurance is available to cover you from lawsuits arising out of the event, and to protect your substantial investments as the host. The cost is based on your coverage type and the limits you select.   
+              </p> -->
+              <br />
+              <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                      <div style="font-size: 2.5rem; margin-bottom:-5px;"><i class="fas fa-church" style="color: #3755BE;"></i></div>
+                    </div> -->
+                    <h4>About Us</h4>
+                    <p>
+                      We are a startup devoted to serving your needs transparently and online.
+                    </p>
+                    <a href="about-company.html">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="card card-body">
+                    <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                      <img class="icon bg-white" src="assets/img/icons/theme/devices/homepod.svg" alt="icon" data-inject-svg />
+                      <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-wine-glass-alt" style="color: #3755BE;"></i></div>
+                    </div> -->
+                    <h4>Licensed Broker</h4>
+                    <p>
+                      As an independent insurance agent we partner with some of the largest and most trusted insurance carriers in the world. We only pick the best products and claims teams and advocate for you when trouble comes.
+                    </p>
+                    <!-- <a href="#">Learn More</a> -->
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card card-body">
+                      <!-- <div class="icon-round mb-3 mb-md-4 bg-primary">
+                        <img class="icon bg-primary" src="assets/img/icons/theme/design/crop.svg" alt="icon" data-inject-svg />
+                        <div style="font-size: 3rem; margin-bottom:-5px;"><i class="fas fa-arrow-circle-left" style="color: #3755BE;"></i></div>
+                      </div> -->
+                      <h4>Customer Service</h4>
+                      <p>
+                        We can help with your other insurance needs too. If we don't have a product we'll recommend a partner who does.
+                      </p>
+                      <!-- <a href="#">Learn More</a> -->
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="circuit-card-alt-flatgrey">
+        <div class="circuit-card-img"></div>
+    </div>
+
+    <footer class="pb-4 bg-secondary-white text-dark" id="footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <div class="card card-body border-0 o-hidden mb-0 bg-primary text-dark">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                            <div class="h3 text-center mb-md-0">Start your insurance conversation</div>
+                            <a href="#" class="btn btn-lg btn-blue">
+                                Chat Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-6 col-lg-3 col-xl-2">
+                    <h5>Navigate</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Weddings</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="https://app.termly.io/document/terms-of-use-for-online-marketplace/f9bf5857-b8f1-4ee1-a197-84a6a3e1ed39" class="nav-link">Terms of Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://app.termly.io/document/privacy-policy/94277ade-0f83-4b59-9b3c-d1c711ec802e" class="nav-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <div class="ml-3">
+                                New York License: #BR-1665925
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <!-- <img class="icon" src="assets/img/icons/theme/map/marker-1.svg" alt="marker-1 icon"
+                                data-inject-svg /> -->
+                            <div class="ml-3">
+                                <span>4615 Center Blvd, Ste PH3, Long Island City,
+                                    <br />NY, 11109</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <!-- <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon"
+                                data-inject-svg /> -->
+                            <div class="ml-3">
+                                <span>Request a callback</span>
+                                <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <!-- <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon"
+                                data-inject-svg /> -->
+                            <div class="ml-3">
+                                <a href="#">service@indemn.ai</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+                    <h5>Subscribe</h5>
+                    <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+                    <form action="/forms/mailchimp.php" data-form-email novalidate>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-none alert alert-success" role="alert" data-success-message>
+                                    Thanks, a member of our team will be in touch shortly.
+                                </div>
+                                <div class="d-none alert alert-danger" role="alert" data-error-message>
+                                    Please fill all fields correctly.
+                                </div>
+                                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"
+                                    data-size="invisible" data-badge="bottomleft">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-loading btn-block"
+                                    data-loading-text="Sending">
+                                    <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon"
+                                        data-inject-svg />
+                                    <span>Subscribe</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy
+                            Policy</a>
+                    </small>
+
+                </div> -->
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-auto">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="icon " src="assets/img/icons/social/instagram.svg"
+                                    alt="instagram social icon" data-inject-svg />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="icon " src="assets/img/icons/social/twitter.svg" alt="twitter social icon"
+                                    data-inject-svg />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="icon " src="assets/img/icons/social/youtube.svg" alt="youtube social icon"
+                                    data-inject-svg />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="icon " src="assets/img/icons/social/medium.svg" alt="medium social icon"
+                                    data-inject-svg />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="icon " src="assets/img/icons/social/facebook.svg" alt="facebook social icon"
+                                    data-inject-svg />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-md-auto text-center">
+                  <small class="text-muted">&copy;2021 Indemn Inc <a href="https://app.termly.io/document/privacy-policy/94277ade-0f83-4b59-9b3c-d1c711ec802e">Privacy Policy</a> and <a
+                    href="https://app.termly.io/document/terms-of-use-for-online-marketplace/f9bf5857-b8f1-4ee1-a197-84a6a3e1ed39">Terms of Service.</a>
+                  </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up"
+        data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg /> -->
+    </a>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+        window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
+    </script>
+
+    <!-- chatroom with date picker -->
+
+    <script type="text/javascript"
+        src="../cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+    <link rel="stylesheet"
+        href="../cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.css"
+        integrity="sha512-gp+RQIipEa1X7Sq1vYXnuOW96C4704yI1n0YB9T/KqdvqaEgL6nAuTSrKufUX3VBONq/TPuKiXGLVgBKicZ0KA=="
+        crossorigin="anonymous" />
+
+    <script>
+        let chatOpen = false;
+        // show/hide date-picker at loading screen
+        $('#datepicker-container').hide();
+        $(function () {
+            $('#reservation').datetimepicker();
+        });
+
+
+        // hide date-picker
+        function hideDatepicker() {
+            $('#datepicker-container').hide();
+        }
+
+        // pick date-picker and set the value to the chatbot text
+        $('#reservation').daterangepicker(null, function (start, end, label) {
+            $(".rw-new-message").val(moment().subtract(29, 'days').format('MM/DD/YYYY') + ' - ' + moment().format('MM/DD/YYYY'));
+            $('#datepicker-container').hide();
+
+            $("#dateInput").val(moment().subtract(29, 'days').format('MM/DD/YYYY') + ' - ' + moment().format('MM/DD/YYYY'));
+            console.log($("#dateForm"))
+            // $("#dateForm").submit();
+
+            // $('dateForm').submit(function(e) {
+            //     console.log('object here...')
+            //         // Stop the form submitting
+            //     e.preventDefault();
+            //     e.currentTarget.submit();
+            //     console.log('object here')
+            // });
+        });
+
+        // process when click custom button1
+        $(document).on("click", "#custom1", function () {
+            console.log('custom button1 is clicked')
+        });
+
+        // process when click custom button2
+        $(document).on("click", "#custom2", function () {
+            console.log('custom button2 is clicked')
+        });
+
+        // process when click custom button3
+        $(document).on("click", "#custom3", function () {
+            $('#datepicker-container').show();
+        });
+
+        !(function () {
+            let e = document.createElement("script"),
+                t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+                // "./assets/js/index.js"),
+                "index.js"),
+                (e.async = !0),
+                (e.onload = async () => {
+                    await window.WebChat.default({
+                        // selector: "#webchat",
+                        initPayload: "/wedding_greet",
+                        customData: {
+                            "language": "en"
+                        }, // arbitrary custom data. Stay minimal as this will be added to the socket
+                        socketUrl: "https://socketsweddings.insurancai.com",
+                        socketPath: "/socket.io/",
+                        title: "Indemn",
+                        subtitle: "Wedding Events Chatbot",
+                        params: {
+                            "storage": "session"
+                        }, // can be set to "local"  or "session". details in storage section.
+                        appendDiv: 'webchat',
+                        onChatOpenStatus: onChatOpenStatus,
+                        profileAvatar: "./profile_avatar.png",
+                        stripePK: 'pk_test_51J9htNFp1ZWgizbCrilJCPhH8QlyAJCGVVlUNfddWtyyshe1WYbhDR1YiOjZSK804i4EWzWtOETvNPxK5AsOqXVr001rvycjxe'
+                    },
+                        null
+                    );
+                }),
+                t.insertBefore(e, t.firstChild);
+        })();
+
+        const onChatOpenStatus = (open) => {
+            chatOpen = open
+            if (window.innerWidth < 599 && chatOpen) {
+                document.querySelector('#nav').style.display = 'none'
+            }
+            else {
+                document.querySelector('#nav').style.display = 'block'
+            }
+        }
+
+        const reportWindowSize = () => {
+            if (window.innerWidth < 599 && chatOpen) {
+                document.querySelector('#nav').style.display = 'none'
+            }
+            else {
+                document.querySelector('#nav').style.display = 'block'
+            }
+        }
+
+        window.onresize = reportWindowSize
+
+        function alignWebchat() {
+            document.getElementById('rasaWebchatPro').style.cssText = 'margin-top: -110px;';
+        }
+
+    </script>
+
+    <!-- <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script> -->
+    <!-- <script>
+    const pattern = trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight
+    })
+    // xvar = document.getElementById("splash");
+    // var node = document.createElement("DIV");
+    // var imgNode = document.createElement(pattern);
+    // node.appendChild(pattern);
+
+    // console.log(xvar);
+    // console.log(node);
+    // console.log(imgNode);
+    // var insertedElement = xvar.insertBefore(pattern.toCanvas(), xvar);
+    document.getElementById("splash").appendChild(pattern.toCanvas())
+    document.body.style.backgroundImage = pattern.toCanvas(); -->
+</script> 
+<!-- Hotjar Tracking Code for https://www.indemn.ai -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2680685,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script
+    src="../www.datadoghq-browser-agent.com/datadog-rum-v3.js"
+    type="text/javascript">
+</script>
+<script>
+    window.DD_RUM && window.DD_RUM.init({
+        applicationId: '0c593066-01e2-4cbc-9f0b-0061f56d7226',
+        clientToken: 'pubdceeeb5a3ff916556817729dfd98d648',
+        site: 'datadoghq.com',
+        service:'wedding-bot',
+        // Specify a version number to identify the deployed version of your application in Datadog 
+        // version: '1.0.0',
+        sampleRate: 100,
+        trackInteractions: true,
+        defaultPrivacyLevel: 'mask-user-input'
+    }); 
+
+    window.DD_RUM &&
+    window.DD_RUM.startSessionReplayRecording();
+</script>
+
+</body>
+
+
+<!-- Mirrored from www.indemn.ai/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 17:13:07 GMT -->
+</html>
